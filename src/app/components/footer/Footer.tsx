@@ -1,7 +1,13 @@
+import Link from "next/link";
+
 const Footer = () => {
     return (
-        <div>FOOTER</div>
+        <footer>FOOTER
+            <Link href="/public-contract">
+                Публічний договір
+            </Link>
+        </footer>
     )
-}
+};
 
 export default Footer;

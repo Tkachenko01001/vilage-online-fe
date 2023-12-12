@@ -1,7 +1,7 @@
-const Page = () => {
+const PublicContractPage = () => {
     return (
         <div>Публічний договір</div>
     )
 };
 
-export default Page;
+export default PublicContractPage;

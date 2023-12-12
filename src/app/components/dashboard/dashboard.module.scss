@@ -1,0 +1,72 @@
+@import '../../styles/base.scss';
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 80px;
+    background: rgba(229, 231, 246, 0.50);
+    backdrop-filter: blur(5px);
+}
+
+.logoLink {
+    color: #0E0F1E;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.22px;
+}
+
+.navigation {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    gap: 48px;
+}
+
+.line {
+    padding: 8px 0px 8px 0px;
+    color:#0A090E;
+    line-height: 140%;
+}
+
+.authBtn {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: none;
+    background: rgb(229 231 246);
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 18px;
+        padding: 2px;
+        margin: -2px;
+        z-index: -1;
+        background: linear-gradient(118deg, #322FFF, #B604EC);
+    }
+}
+
+.authBtnText {
+    background: var(--ui-linear-accent, linear-gradient(118deg, #322FFF -37.41%, #B604EC 136.84%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
