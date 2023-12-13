@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer>FOOTER
+        <footer style={{ marginTop: '1000px' }}>FOOTER
             <Link href="/public-contract">
                 Публічний договір
             </Link>
