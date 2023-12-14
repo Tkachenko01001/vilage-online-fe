@@ -14,7 +14,7 @@
 }
 
 .logoLink {
-    color: #0E0F1E;
+    color: $black;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.22px;
@@ -61,12 +61,12 @@
         padding: 2px;
         margin: -2px;
         z-index: -1;
-        background: linear-gradient(118deg, #322FFF, #B604EC);
+        background: $linear-accent;
     }
 }
 
 .authBtnText {
-    background: var(--ui-linear-accent, linear-gradient(118deg, #322FFF -37.41%, #B604EC 136.84%));
+    background: $linear-accent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

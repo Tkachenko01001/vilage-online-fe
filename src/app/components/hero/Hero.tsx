@@ -11,7 +11,7 @@ const Hero = () => {
                 <h1 className={styles.title}>Покупки з доставкою до вашого дому</h1>
                 <p className={styles.paragraph}>Зекономимо Ваш час та кошти та забезпечимо доступ до усіх необхідних товарів</p>
                 <button className={styles.btn} type="button">
-                    Спробувати безкоштовно
+                    <span className={styles.btnText}>Спробувати безкоштовно</span>
                     <Arrow className={styles.iconArow} />
                 </button>
             </div>

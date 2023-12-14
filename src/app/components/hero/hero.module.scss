@@ -7,8 +7,9 @@
     flex-direction: column;
     padding-top: 209px;
 }
+
 .title {
-    color: var(--ui-black, #0E0F1E);
+    color: $black;
     text-align: center;
     font-size: 64px;
     max-width: 700px;
@@ -18,7 +19,7 @@
 }
 
 .paragraph {
-    color: var(--ui-black, #0E0F1E);
+    color: $black;
     text-align: center;
     font-family: Manrope;
     font-size: 20px;
@@ -37,8 +38,8 @@
     gap: 12px;
     border: none;
     border-radius: 16px;
-    background: linear-gradient(118deg, #322FFF -37.41%, #B604EC 136.84%);
-    color: var(--ui-white, #FEFEFE);
+    background: $linear-accent;
+    color: $white;
     font-family: Manrope;
     font-size: 18px;
     font-weight: 500;
@@ -85,7 +86,7 @@
     width: 100%;
     height: 100%;
     border-radius: 532px;
-    background:#4F4DCD;
+    background: $blue;
     z-index: -2;
     filter: blur(175px);
 
