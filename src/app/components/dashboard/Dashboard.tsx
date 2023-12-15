@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SecondaryButton from '../../assets/icons/secondary-button.svg';
 import styles from "./dashboard.module.scss";
 // import { useEffect } from 'react';
 // import io from 'socket.io-client';
@@ -19,7 +20,7 @@ const Dashboard = () => {
                     <li className={styles.line}><Link className={styles.link} href="/delivery">Доставка</Link></li>
                 </ul>
                 <div className={styles.authWrapp}>
-                    <button className={styles.authBtn}> <span className={styles.authBtnText}>Увійти</span></button>
+                    <button className={styles.authBtn}><SecondaryButton className={styles.btn} /></button>
                 </div>
             </nav>
         </header>
