@@ -1,0 +1,95 @@
+@import '../../styles/base.scss';
+
+.container {
+    margin-top: 1000px;
+    padding: 40px 80px;
+    background: $bg-footer;
+}
+
+.logo, .menuWrapp, .contactWrapp, .policyWrapp {
+    color: $white;
+    line-height: 140%;
+}
+
+.contentWrapp {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo,
+.menuWrapp,
+.contactWrapp {
+    display: flex;
+    max-width: 413px;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.menuLine {
+    padding: 8px 0px;
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactLine {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.policyWrapp {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $white;
+}
+
+.contactIconMail {
+    fill: $white;
+}
+
+.contactIconPhone {
+    stroke: $white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &:hover {
+        background: $linear-accent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        .contactIconPhone {
+            stroke: #4F4DCD;
+        }
+
+        .contactIconMail {
+            fill: #4F4DCD;
+        }
+    }
+}
+
+.menuLink:hover,
+.contentLink:hover,
+.policyLink:hover {
+    background: $linear-accent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
