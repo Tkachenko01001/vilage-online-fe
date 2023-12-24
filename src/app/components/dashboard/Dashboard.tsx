@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Navigation from "./Navigation";
 import SecondaryButton from '../../assets/icons/secondary-button.svg';
 import styles from "./dashboard.module.scss";
 // import { useEffect } from 'react';
@@ -12,13 +13,7 @@ const Dashboard = () => {
                     Selo-online
                 </Link>
             <nav className={styles.navigation}>
-                <ul className={styles.list}>
-                    <li className={styles.line}><Link className={styles.link} href="/">Головна</Link></li>
-                    <li className={styles.line}><Link className={styles.link} href="#about">Про нас</Link></li>
-                    <li className={styles.line}><Link className={styles.link} href="/catalog">Каталог товарів</Link></li>
-                    <li className={styles.line}><Link className={styles.link} href="#rates">Тарифи</Link></li>
-                    <li className={styles.line}><Link className={styles.link} href="/delivery">Доставка</Link></li>
-                </ul>
+                <Navigation />             
                 <div className={styles.authWrapp}>
                     <button className={styles.authBtn}><SecondaryButton className={styles.btn} /></button>
                 </div>

@@ -24,6 +24,7 @@
     display: flex;
     gap: 48px;
     align-items: center;
+    position: relative;
 }
 
 .list {
@@ -53,9 +54,35 @@
     height: 46px;
 }
 
-.authBtnText {
+.linkActive {
     background: $linear-accent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: ease 0.2s;
+};
+
+.active {
+    position: absolute;
+    bottom: 4px;
+    width: 24px;
+    height: 2px;
+    background-image: $linear-accent;
+    transition: ease 0.2s;
+
+    &HomePath {
+        left: 19.5px;
+        transition: ease 0.2s;
+    }
+
+    &catalog {
+        left: 253px;
+        transition: ease 0.2s;
+        width: 50px;
+    }
+
+    &delivery {
+        left: 516px;
+        transition: ease 0.2s;
+    }
 }
