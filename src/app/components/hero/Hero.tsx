@@ -1,6 +1,4 @@
 import Elipse from '../../assets/icons/ellipse.svg';
-import BigBasket from '../../assets/icons/basket.svg';
-import SmallBaskets from '../../assets/icons/basket2.svg';
 import Arrow from '../../assets/icons/arrow.svg';
 import styles from './hero.module.scss';
 
@@ -17,11 +15,11 @@ const Hero = () => {
             </div>
             <div className={`${styles.blurBall} ${styles.blurBallHeight}`}></div>
             <Elipse className={styles.iconElipse} />
+            <div className={styles.iconElipse}></div>
             <div className={`${styles.blurBall} ${styles.blurBallBottom}`}></div>
             <div className={styles.basketWrapp}>
-            <BigBasket className={styles.iconBigBasket} />
             </div>
-            <SmallBaskets  className={styles.iconSmallBaskets}/>
+            <div className={styles.iconSmallBaskets}></div>
         </section>
     )
 };

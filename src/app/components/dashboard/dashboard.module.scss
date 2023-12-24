@@ -59,7 +59,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: ease 0.2s;
+    transition: ease 0.3s;
 };
 
 .active {
@@ -68,21 +68,20 @@
     width: 24px;
     height: 2px;
     background-image: $linear-accent;
-    transition: ease 0.2s;
 
     &HomePath {
         left: 19.5px;
-        transition: ease 0.2s;
+        transition: ease 0.3s;
     }
 
     &catalog {
         left: 253px;
-        transition: ease 0.2s;
+        transition: ease 0.3s;
         width: 50px;
     }
 
     &delivery {
         left: 516px;
-        transition: ease 0.2s;
+        transition: ease 0.3s;
     }
 }

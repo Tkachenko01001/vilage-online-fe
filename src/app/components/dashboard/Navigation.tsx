@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { navList } from "./halpers";
+import ActiveLine from "../../assets/icons/vector.svg";
 import styles from "./dashboard.module.scss";
 
 const Navigation = () => {
@@ -18,7 +19,7 @@ const Navigation = () => {
           </li>
         ))}
       </ul>
-      <span className={`${styles.active} ${pathname === '/' ? styles.activeHomePath : styles[`active${pathname.slice(1)}`]}`}></span>
+      <ActiveLine className={`${styles.active} ${pathname === '/' ? styles.activeHomePath : styles[`active${pathname.slice(1)}`]}`} />
     </>
   );
 };
