@@ -4,12 +4,6 @@ export const titleAnimation = {
   transition: { type: "tween", ease: "easeInOut",  duration: 0.5}
 };
 
-export const elipseAnimation = {
-  animate: { opacity: 1 },
-  initial: { opacity: 0 },
-  transition: { duration: 0.6 }
-};
-
 export const smallBasketAnimation = {
   animate: { y: -300, opacity: 1, rotate: 0 },
   initial: { y: -500, opacity: 0, rotate: 60 },

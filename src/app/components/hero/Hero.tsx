@@ -18,9 +18,7 @@ const Hero = () => {
                 </button>
             </motion.div>
             <div className={`${styles.blurBall} ${styles.blurBallHeight}`}></div>
-            <motion.div {...elipseAnimation} >
                 <Elipse className={styles.iconElipse} />
-            </motion.div>
             <div className={`${styles.blurBall} ${styles.blurBallBottom}`}></div>
             <motion.div {...bigBasketAnimation} className={styles.basketWrapp}></motion.div>
             <motion.div {...smallBasketAnimation} className={styles.iconSmallBaskets}></motion.div>
