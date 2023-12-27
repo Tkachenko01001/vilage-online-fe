@@ -1,25 +1,30 @@
+"use client"
+import { motion } from "framer-motion";
+import { titleAnimation, elipseAnimation, bigBasketAnimation, smallBasketAnimation } from "../../animation/animateMainPage";
 import Elipse from '../../assets/icons/ellipse.svg';
 import Arrow from '../../assets/icons/arrow.svg';
 import styles from './hero.module.scss';
+import Track from '../track/Track';
 
 const Hero = () => {
     return (
         <section className={styles.sectionWrapp}>
-            <div className={styles.titleWrapp}>
+            <motion.div className={styles.titleWrapp} {...titleAnimation}>
                 <h1 className={styles.title}>Покупки з доставкою до вашого дому</h1>
                 <p className={styles.paragraph}>Зекономимо Ваш час та кошти та забезпечимо доступ до усіх необхідних товарів</p>
                 <button className={styles.btn} type="button">
                     <span className={styles.btnText}>Спробувати безкоштовно</span>
                     <Arrow className={styles.iconArow} />
                 </button>
-            </div>
+            </motion.div>
             <div className={`${styles.blurBall} ${styles.blurBallHeight}`}></div>
-            <Elipse className={styles.iconElipse} />
-            <div className={styles.iconElipse}></div>
+            <motion.div {...elipseAnimation} >
+                <Elipse className={styles.iconElipse} />
+            </motion.div>
             <div className={`${styles.blurBall} ${styles.blurBallBottom}`}></div>
-            <div className={styles.basketWrapp}>
-            </div>
-            <div className={styles.iconSmallBaskets}></div>
+            <motion.div {...bigBasketAnimation} className={styles.basketWrapp}></motion.div>
+            <motion.div {...smallBasketAnimation} className={styles.iconSmallBaskets}></motion.div>
+            <Track />
         </section>
     )
 };

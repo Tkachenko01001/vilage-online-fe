@@ -1,0 +1,30 @@
+@import "../../styles/base.scss";
+
+.wrapp {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0px;
+    margin-top: 211px;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    backdrop-filter: blur(5px);
+    overflow-x: auto;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $blue;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+}

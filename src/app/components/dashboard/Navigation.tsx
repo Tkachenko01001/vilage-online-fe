@@ -13,7 +13,7 @@ const Navigation = () => {
       <ul className={styles.list}>
         {navList.map((line) => (
           <li key={line.value} className={styles.line}>
-            <Link className={`${pathname === line.path ? styles.linkActive : ''}`} href={line.path}>
+            <Link className={pathname === line.path ? styles.linkActive : ''} href={line.path}>
               {line.value}
             </Link>
           </li>
