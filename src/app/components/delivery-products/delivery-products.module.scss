@@ -1,0 +1,67 @@
+@import '../../styles/base.scss';
+
+.container {
+    padding: 80px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    max-width: 630px;
+    width: 100%;
+}
+
+.sloganDescription {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.sloganTitle {
+    color: $black;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.528px;
+}
+
+.sloganPharagraph {
+    color: $black;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.22px;
+}
+
+.descriptionCardsWrapp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.descriptionCard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 24px;
+    background: $white-clear;
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+.descriptionCardTitle {
+    color: $black;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.descriptionCardParagraph {
+    color: $black;
+    line-height: 140%;
+}

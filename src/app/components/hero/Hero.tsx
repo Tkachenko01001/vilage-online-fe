@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
-import { titleAnimation, bigBasketAnimation, smallBasketAnimation } from "../../animation/animateMainPage";
+import { titleAnimation, bigBasketAnimation, smallBasketAnimation } from "../../assets/animation/animateMainPage";
 import Elipse from '../../assets/icons/ellipse.svg';
 import Arrow from '../../assets/icons/arrow.svg';
 import styles from './hero.module.scss';
