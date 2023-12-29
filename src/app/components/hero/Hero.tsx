@@ -8,7 +8,7 @@ import Track from '../track/Track';
 
 const Hero = () => {
 
-  const handleHover = (e) => {
+  const handleHover = (e: any) => {
         const x = e.pageX - e.target.offsetLeft;
         const y = e.pageY - e.target.offsetTop;
 
