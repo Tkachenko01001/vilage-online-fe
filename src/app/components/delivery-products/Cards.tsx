@@ -12,23 +12,20 @@ const Cards = () => {
     const CARDS_LIST = [
         {
             id: 1,
-            firstTitle: "Доставка товарів",
-            secondTitle: "Перетворюємо Ваші бажання у реальність",
-            paragraph: "Пропонуємо великий вибір товарів від місцевих постачальників, зі швидкою доставкою прямо до Вашого порогу",
+            title: "Широкий вибір",
+            paragraph: "Замовляйте улюблені товари з нашого  каталогу. Обирайте серед найкращих пропозицій від місцевих постачальників",
             icon: <CheckSquare />
         },
         {
             id: 2,
-            firstTitle: "Доставка товарів",
-            secondTitle: "Перетворюємо Ваші бажання у реальність",
-            paragraph: "Пропонуємо великий вибір товарів від місцевих постачальників, зі швидкою доставкою прямо до Вашого порогу",
+            title: "Ексклюзивна доставка",
+            paragraph: "Насолоджуйтеся особливою службою доставки, яка приводить ваші покупки прямо до дверей",
             icon: <ShoppingBag />
         },
         {
             id: 3,
-            firstTitle: "Доставка товарів",
-            secondTitle: "Перетворюємо Ваші бажання у реальність",
-            paragraph: "Пропонуємо великий вибір товарів від місцевих постачальників, зі швидкою доставкою прямо до Вашого порогу",
+            title: "Зручніші покупки",
+            paragraph: "Ваші покупки стануть не тільки простішими, але й набагато приємнішими ",
             icon: <Truck />
         }
     ];
@@ -39,11 +36,11 @@ const Cards = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.9 }}
         >
-            {CARDS_LIST.map((card, index) => (
-                <motion.li key={card.id} className={styles.descriptionCard} variants={cardVariants} custom={index}>
-                    {card.icon}
-                    <h3 className={styles.descriptionCardTitle}>{card.firstTitle}</h3>
-                    <p className={styles.descriptionCardParagraph}>{card.paragraph}</p>
+            {CARDS_LIST.map(({id, title, icon, paragraph}, index) => (
+                <motion.li key={id} className={styles.descriptionCard} variants={cardVariants} custom={index}>
+                    {icon}
+                    <h3 className={styles.descriptionCardTitle}>{title}</h3>
+                    <p className={styles.descriptionCardParagraph}>{paragraph}</p>
                 </motion.li>
             ))}
         </motion.ul>
