@@ -1,6 +1,7 @@
 @import '../../styles/base.scss';
 
 .container {
+    position: relative;
     padding: 80px;
 }
 
@@ -64,4 +65,27 @@
 .descriptionCardParagraph {
     color: $black;
     line-height: 140%;
+}
+
+.blurBall {
+    position: absolute;
+    width: 532px;
+    height: 532px;
+    border-radius: 532px;
+    background: var(--ui-blue, #4F4DCD);
+    filter: blur(200px);
+    z-index: -1;
+    top: 400px;
+    left: -300px;
+}
+
+.blurBallSecond {
+    position: absolute;
+    width: 532px;
+    height: 532px;
+    border-radius: 532px;
+    background: var(--ui-blue, #4F4DCD);
+    filter: blur(200px);
+    z-index: -1;
+    top: 200px
 }

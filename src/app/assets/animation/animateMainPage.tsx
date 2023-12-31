@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export const titleAnimation = {
   animate: { y: 0, opacity: 1 },
   initial: { y: -90, opacity: 0 },
@@ -17,6 +19,39 @@ export const bigBasketAnimation = {
 };
 
 export const trackAnimation = {
-    x: ["-50%", "-0%"],
-    transition: { duration: 8 * 3, ease: "linear", repeat: Infinity }
-}
+  x: ["-50%", "-0%"],
+  transition: { duration: 8 * 3, ease: "linear", repeat: Infinity }
+};
+
+export const titleVariants: Variants = {
+  offscreen: {
+    x: -800
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
+
+export const cardVariants: Variants = {
+  offscreen: {
+    x: -900,
+    opacity: 0,
+    rotate: -30
+  },
+  onscreen: (index: number) => ({
+    opacity: 1,
+    rotate: 0,
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1,
+      delay: index * 0.1
+    }
+  })
+};
