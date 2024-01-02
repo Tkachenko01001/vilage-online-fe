@@ -25,13 +25,13 @@
 
     &:hover {
         transition: ease 0.3s;
-        border: 2px solid var(--ui-blue, #4F4DCD);
+        border: 2px solid $blue;
     }
 
     &Active {
         font-weight: 500;
         background: $white;
-        border: 2px solid var(--ui-blue, #4F4DCD);
+        border: 2px solid $blue;
         transition: ease 0.3s;
     }
 }

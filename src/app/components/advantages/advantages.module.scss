@@ -1,0 +1,74 @@
+@import '../../styles/base.scss';
+
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130px;
+    padding: 160px 80px;
+}
+
+.wrrapText, .titleWarapp, .list, .line {
+    @include block-flex-wrapp;
+}
+
+.wrrapText {
+    gap: 48px;
+    max-width: 628px;
+    width: 100%;
+}
+
+.titleWarapp {
+    gap: 16px;
+}
+
+.list {
+    gap: 32px;
+}
+
+.line {
+    gap: 16px;
+}
+
+.description {
+    @include description-typography;
+}
+
+.title {
+    @include title-typography;
+}
+
+.paragraph {
+    @include paragraph-typography;
+}
+
+.lineTitle {
+    @include line-title-typography;
+    @include gradient-text;
+    padding: 0px 8px;
+    border-left: 2px solid #322FFF;
+}
+
+.lineParagraph {
+    @include line-paragraph-typography;
+}
+
+.wrappIconsBusiness {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.blurBall {
+    @include blur-ball;
+    right: -10%;
+    bottom: -40px;
+}
+
+
+
+
+

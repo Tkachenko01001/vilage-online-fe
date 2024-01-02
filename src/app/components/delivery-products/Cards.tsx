@@ -7,9 +7,16 @@ import ShoppingBag from '../../assets/icons/shopping-bag.svg';
 import Truck from '../../assets/icons/truck.svg';
 import styles from './delivery-products.module.scss';
 
+interface CardItem {
+    id: number,
+    title: string,
+    paragraph: string,
+    icon: JSX.Element,
+}
+
 const Cards = () => {
 
-    const CARDS_LIST = [
+    const CARDS_LIST: CardItem[] = [
         {
             id: 1,
             title: "Широкий вибір",

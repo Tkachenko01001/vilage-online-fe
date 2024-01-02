@@ -21,10 +21,9 @@
 .logo,
 .menuWrapp,
 .contactWrapp {
-    display: flex;
+    @include block-flex-wrapp;
     max-width: 413px;
     width: 100%;
-    flex-direction: column;
     gap: 24px;
 }
 
@@ -33,8 +32,7 @@
 }
 
 .contactList {
-    display: flex;
-    flex-direction: column;
+    @include block-flex-wrapp;
     gap: 16px;
 }
 
@@ -69,17 +67,14 @@
     gap: 16px;
 
     &:hover {
-        background: $linear-accent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+       @include gradient-text;
 
         .contactIconPhone {
-            stroke: #4F4DCD;
+            stroke: $blue;
         }
 
         .contactIconMail {
-            fill: #4F4DCD;
+            fill: $blue;
         }
     }
 }
@@ -87,9 +82,6 @@
 .menuLink:hover,
 .contentLink:hover,
 .policyLink:hover {
-    background: $linear-accent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-text;
 }
 

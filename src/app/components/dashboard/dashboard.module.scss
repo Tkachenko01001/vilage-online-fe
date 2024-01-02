@@ -55,10 +55,7 @@
 }
 
 .linkActive {
-    background: $linear-accent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-text;
 };
 
 .active {

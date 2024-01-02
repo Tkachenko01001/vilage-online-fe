@@ -8,13 +8,13 @@ import Track from '../track/Track';
 
 const Hero = () => {
 
-  const handleHover = (e: any) => {
-        const x = e.pageX - e.target.offsetLeft;
-        const y = e.pageY - e.target.offsetTop;
+const handleHover = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const x = e.pageX - (e.target as HTMLElement).offsetLeft;
+    const y = e.pageY - (e.target as HTMLElement).offsetTop;
 
-        e.target.style.setProperty("--x", `${x}px`);
-        e.target.style.setProperty("--y", `${y}px`);
-    };
+    (e.target as HTMLElement).style.setProperty("--x", `${x}px`);
+    (e.target as HTMLElement).style.setProperty("--y", `${y}px`);
+};
 
     return (
         <section className={styles.sectionWrapp}>

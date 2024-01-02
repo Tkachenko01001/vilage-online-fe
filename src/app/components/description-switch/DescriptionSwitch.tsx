@@ -2,14 +2,24 @@
 import { useState } from "react";
 import styles from "./description-switch.module.scss";
 
+enum ButtonId {
+  ForBuyers = "forBuyers",
+  ForSellers = "forSellers",
+}
+
+interface ButtonsSwitch {
+  id: ButtonId,
+  text: string
+}
+
 const DescriptionSwitch = () => {
-  const [active, setActive] = useState("forBuyers");
+  const [active, setActive] = useState<ButtonId>(ButtonId.ForBuyers);
 
-  const handleClickActive = (id) => setActive(id);
+  const handleClickActive = (id: ButtonId) => setActive(id);
 
-  const BUTTONS = [
-    { id: "forBuyers", text: "Для покупців" },
-    { id: "forSellers", text: "Для Продавців" },
+  const BUTTONS: ButtonsSwitch[] = [
+    { id: ButtonId.ForBuyers, text: "Для покупців" },
+    { id: ButtonId.ForSellers, text: "Для Продавців" },
   ];
 
   return (
