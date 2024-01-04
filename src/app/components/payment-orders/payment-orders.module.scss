@@ -1,7 +1,6 @@
 @import '../../styles/base.scss';
 
 .container {
-    position: relative;
     padding: 0px 80px
 }
 
@@ -32,6 +31,9 @@
     padding: 24px;
     border-radius: 24px;
     background: $white-clear;
+    &:first-child {
+        position: relative;
+    }
 }
 
 .lineWrapp {
@@ -56,6 +58,6 @@
 
 .blurBall {
     @include blur-ball;
-    bottom: 16px;
-    left: -18%;
+    bottom: -43%;
+    left: -75%;
 }

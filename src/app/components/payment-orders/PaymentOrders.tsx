@@ -7,7 +7,6 @@ import styles from "./payment-orders.module.scss";
 const PaymentOrders = () => {
     return (
         <section className={styles.container}>
-            <div className={styles.blurBall}></div>
             <div className={styles.titleWrapp}>
                 <h3 className={styles.description}>Оплата замовлень</h3>
                 <h2 className={styles.title}>Оплачуйте Ваші покупки легко і швидко в один клік</h2>
@@ -15,6 +14,7 @@ const PaymentOrders = () => {
             </div>
             <ul className={styles.list}>
                 <li className={styles.line}>
+                    <div className={styles.blurBall}></div>
                     <div className={styles.lineWrapp}>
                         <FolderPlus />
                         <p className={styles.number}>01</p>
