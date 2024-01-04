@@ -5,6 +5,7 @@
 }
 
 .titleWrapp {
+    position: relative;
     @include block-flex-wrapp;
     gap: 24px;
     max-width: 630px;
@@ -58,6 +59,5 @@
 
 .blurBall {
     @include blur-ball;
-    bottom: -43%;
-    left: -75%;
+    left: -64%;
 }

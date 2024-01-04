@@ -11,7 +11,7 @@ const Home = () => {
       <Advantages />
       <PaymentOrders />
     </>
-  )
-}
+  );
+};
 
 export default Home;

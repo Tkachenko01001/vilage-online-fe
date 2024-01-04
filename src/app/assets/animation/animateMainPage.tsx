@@ -50,8 +50,41 @@ export const cardVariants: Variants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 1,
+      duration: 1.2,
       delay: index * 0.1
     }
   })
 };
+
+export const lineVariants: Variants = {
+  offscreen: {
+    x: -700,
+    opacity: 0,
+  },
+  onscreen: (index: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.7,
+      delay: index * 0.1
+    }
+  })
+};
+
+export const cardsPayMentVariants: Variants = {
+  offscreen: {
+    scale: 0,
+    borderRadius: '80%',
+  },
+  onscreen: (index: number) => ({
+    scale: 1,
+    borderRadius: '24px',
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 0.7,
+      delay: index * 0.2
+    }
+  })
+}
