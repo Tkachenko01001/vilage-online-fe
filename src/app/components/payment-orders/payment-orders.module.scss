@@ -1,6 +1,7 @@
 @import '../../styles/base.scss';
 
 .container {
+    position: relative;
     padding: 0px 80px
 }
 
@@ -51,4 +52,10 @@
 .btnWrapp {
     display: flex;
     justify-content: center;
+}
+
+.blurBall {
+    @include blur-ball;
+    bottom: 16px;
+    left: -18%;
 }

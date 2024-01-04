@@ -7,6 +7,7 @@ import styles from "./payment-orders.module.scss";
 const PaymentOrders = () => {
     return (
         <section className={styles.container}>
+            <div className={styles.blurBall}></div>
             <div className={styles.titleWrapp}>
                 <h3 className={styles.description}>Оплата замовлень</h3>
                 <h2 className={styles.title}>Оплачуйте Ваші покупки легко і швидко в один клік</h2>
