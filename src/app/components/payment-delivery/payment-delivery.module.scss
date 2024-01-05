@@ -1,0 +1,51 @@
+@import '../../styles/base.scss';
+
+.container {
+    padding: 160px 80px
+}
+
+.titleWrapp {
+    @include block-flex-wrapp;
+    gap: 24px;
+    max-width: 630px;
+    width: 100%;
+    margin-bottom: 48px
+}
+
+.list {
+    @include block-flex-wrapp;
+    gap: 24px;
+    max-width: 413px;
+}
+
+.lineWrapp {
+    @include block-flex-wrapp;
+    gap: 16px
+}
+
+.description {
+    @include description-typography;
+}
+
+.title {
+    @include title-typography;
+}
+
+.paragraph {
+    @include paragraph-typography;
+}
+
+.number {
+    @include gradient-text;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    border-left: 3px solid var(--ui-blue, #4F4DCD);
+    padding: 0px 24px;
+}
+
+.paragraphLine {
+    color: $black;
+    line-height: 140%;
+    padding: 0px 24px;
+}

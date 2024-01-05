@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
-import { titleVariants, cardsPayMentVariants } from "@/app/assets/animation/animateMainPage";
+import { titleVariants, cardVariants } from "@/app/assets/animation/animateMainPage";
 import ButtonTryForFree from "../button-try-for-free/ButtonTryForFree";
 import FolderPlus from "../../assets/icons/folder-plus.svg";
 import FolderEdit from "../../assets/icons/folder-edit.svg";
@@ -32,7 +32,7 @@ const PaymentOrders = () => {
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.9 }}>
                 {LIST_CARDS.map(({ icon, number, paragraph }, index) => (
-                    <motion.li key={index} className={styles.line} variants={cardsPayMentVariants} custom={index}>
+                    <motion.li key={index} className={styles.line} variants={cardVariants} custom={index}>
                         <div className={styles.lineWrapp}>
                             {icon}
                             <p className={styles.number}>{number}</p>
